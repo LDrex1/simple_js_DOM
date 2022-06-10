@@ -40,7 +40,10 @@ header > div {
   background-blend-mode: multiply;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 2vw;
   margin-bottom: 10px;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
   width: 90%;
   display: flex;
   column-gap: 2vw;
