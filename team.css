@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  background: #c57263;
+  padding: 4px;
+  border: 2px solid #884c88;
+  border-radius: 5px;
+}
+
+header {
+  background: #2f5ac8;
+}
+
+header > div {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team {
+  background: #5072a5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team > h2 {
+  margin-top: 4vh;
+  margin-bottom: 3vh;
+}
+
+.bg-image {
+  background: url(images/bg-image.jpg) #3565cb;
+  background-blend-mode: multiply;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 10px;
+  width: 90%;
+  display: flex;
+  column-gap: 2vw;
+  row-gap: 3vh;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bg-image > .member-card {
+  background: #4a7c18;
+  border: 2px solid #3f901e;
+  border-radius: 5px;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  transition: all ease-out 300ms;
+}
+
+.bg-image > .member-card:hover {
+  border: 2px solid #4ca528;
+  box-shadow: 1px 1px 5px 1px #6ac645;
+}
+
+.member-card > .image-div {
+  background: #6d7275;
+  margin-top: 5px;
+  margin-left: 5px;
+  margin-bottom: 2px;
+  width: calc(90px + 3vw);
+  height: calc(90px + 3vw);
+  border-radius: 50%;
+}
+
+.member-card > .member-details {
+  width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.member-card > button {
+  align-self: flex-end;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+footer {
+  background: #206028;
+  padding-top: 8vh;
+  padding-bottom: 1.5vh;
+  text-align: center;
+  font-weight: 600;
+}
+
+@media screen and (max-width: 598px) {
+  header div {
+    flex-wrap: wrap;
+    column-gap: 3vw;
+    justify-content: space-around;
+  }
+  header h1 {
+    order: 2;
+  }
+}
