@@ -1,4 +1,5 @@
 "use strict";
+//team array
 const team = [
   {
     firstName: "Damilare",
@@ -62,21 +63,25 @@ const team = [
   },
 ];
 
+//Function to convert a detail to a class
 const detailToClass = (detail) => {
   return detail.match(/([a-z])([A-Z])/)
     ? detail.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase()
     : detail;
 };
 
+//Function to convert a detail to a name that will be displayed on the page
 const detailName = (data) => {
   return detailToClass(data).replace(/(^[a-z]?)/, (l) => l.toUpperCase());
 };
 
+//Declaration of variable assigned a numberical value to set unique ids
 let idnumber = 1;
 //root div
 const membersContainer = document.querySelector(".bg-image");
 // const fragment = document.createElement("div");
-//loop
+
+//loop to render all elements
 team.forEach((ele) => {
   let {
     firstName,
@@ -89,8 +94,10 @@ team.forEach((ele) => {
     age,
   } = ele;
 
-  //member id +1 increament
+  //member id
   let memberid = "member" + idnumber;
+
+  //card containing information about each member
   let teamMember = document.createElement("div");
   teamMember.setAttribute("class", "member-card");
   teamMember.setAttribute("id", memberid);
@@ -111,6 +118,7 @@ team.forEach((ele) => {
   let memberDetails = document.createElement("div");
   memberDetails.setAttribute("class", "member-details");
 
+  //Array of additional details
   let details = [favoriteFood, complexion, skills, bestMovie, age];
   let detailsList = [
     "favoriteFood",
@@ -121,6 +129,8 @@ team.forEach((ele) => {
   ];
 
   let detailIndex = 0;
+
+  //loop to render all addition details
   details.forEach((element) => {
     let detailHeading = document.createElement("h4");
     detailHeading.setAttribute(
@@ -146,6 +156,7 @@ team.forEach((ele) => {
     alert(`${firstName} ${lastName}`)
   );
   teamMember.appendChild(memberButton);
+
   //DOM render
   membersContainer.appendChild(teamMember);
 
