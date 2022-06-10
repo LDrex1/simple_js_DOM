@@ -86,6 +86,11 @@ header > div {
   margin-bottom: 5px;
 }
 
+#member1 .image-div {
+  background-position: 53% 23%;
+  background-size: 300%;
+}
+
 footer {
   background: #206028;
   padding-top: 8vh;
