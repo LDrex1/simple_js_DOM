@@ -4,7 +4,7 @@ const team = [
   {
     firstName: "Damilare",
     lastName: "Abiola",
-    image: "images/color1.jpg",
+    image: "images/dami.jpeg",
     favoriteFood: "Beans and Fried Plantain",
     complexion: "Black",
     skills: ["HTML", "CSS", "and JavaScript"],
